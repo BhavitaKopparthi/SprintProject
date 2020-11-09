@@ -88,7 +88,6 @@ private CustomerServiceImpl customerServiceImpl;
 	@RequestMapping(method=RequestMethod.POST, value="/add")
 	public ResponseEntity<String> addCandidate(@RequestBody  Customer customer)
 	{
-		// @Valid performs all the required validations on customer data
 		try
 		{
 		String result=customerServiceImpl.addCustomer(customer);
